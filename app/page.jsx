@@ -99,7 +99,7 @@ export default function HomePage() {
 
       {/* HERO */}
       <div className="mw-hero">
-        <p className="mw-hero-eyebrow">Free personal finance tools</p>
+        <p className="mw-hero-eyebrow">Free personal finance tools </p>
         <h1 className="mw-hero-title">Make smarter<br />money decisions<br /><em>with better math.</em></h1>
         <p className="mw-hero-sub">Free calculators that show you exactly where you stand — on your mortgage, retirement, debt, emergency savings, and more. No signup, no fluff, just numbers.</p>
         <div className="mw-hero-cta">
