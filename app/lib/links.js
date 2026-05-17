@@ -17,3 +17,5 @@ export const RELATED_LINKS = [
   { label: "Cool Username Generator",              href: "https://coolusernamegenerator.com" },
   { label: "MoneyWise Calculator Hub",             href: "https://moneywisecalculator.com" },
 ]
+
+export const ALL_TOOLS = RELATED_LINKS
