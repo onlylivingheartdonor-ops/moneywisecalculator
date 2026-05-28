@@ -73,10 +73,10 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              name: "moneywisecalculator",
-              description: "Free online tool by MoneyWise Calculators",
+              name: "MoneyWise Calculators",
+              description: "Free hub of financial calculators including mortgage affordability, retirement planning, debt payoff, investment analysis, and more. All tools run in your browser — no data is collected.",
               url: "https://www.moneywisecalculator.com",
-              applicationCategory: "Finance",
+              applicationCategory: "FinanceApplication",
               operatingSystem: "All",
               offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }
             }),
