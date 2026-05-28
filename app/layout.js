@@ -10,7 +10,7 @@ export const metadata = {
     title: "MoneyWise Calculator | Free Personal Finance Tools",
     description: "Free calculators for mortgage affordability, retirement savings, emergency funds, debt payoff, and more. Make smarter money decisions with tools that do the math for you.",
     url: "https://www.moneywisecalculator.com",                 // ← MUST CHANGE
-    siteName: "Moneywise Calculators",             // ← Change
+    siteName: "moneywisecalculator.com",
     images: [
       {
         url: "https://www.moneywisecalculator.com/og-image.png", // ← MUST CHANGE
@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebApplication",
               name: "moneywisecalculator",
-              description: "Financial calculator tool",
+              description: "Free online tool by MoneyWise Calculators",
               url: "https://www.moneywisecalculator.com",
               applicationCategory: "Finance",
               operatingSystem: "All",
