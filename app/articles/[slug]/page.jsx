@@ -1,6 +1,7 @@
 "use client"
+export const runtime = 'edge'
 import { Shell } from "../../lib/shell"
-import { RELATED_LINKS as ALL_TOOLS } from "../../lib/links"
+import { ALL_TOOLS } from "../../lib/links"
 import Link from "next/link"
 
 const ARTICLES = {
