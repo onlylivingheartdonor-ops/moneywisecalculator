@@ -78,11 +78,53 @@ export default function HomePage() {
         .mw-footer-links a:hover { color: #1a1a1a; }
         .mw-footer-disclaimer { font-size: 11px; color: #aaa; margin-top: .5rem; line-height: 1.5; max-width: 600px; }
 
+        /* New story banner styles */
+        .mw-story-banner {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 0 1.5rem 2rem;
+        }
+        .mw-story-card {
+          background: #1a1a1a;
+          color: #faf8f4;
+          border-radius: 8px;
+          padding: 1.25rem 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+        .mw-story-text {
+          font-size: 13px;
+          line-height: 1.6;
+        }
+        .mw-story-text strong {
+          color: #fcd34d;
+        }
+        .mw-story-link {
+          background: #b45309;
+          color: #fff;
+          padding: 0.5rem 1.25rem;
+          border-radius: 4px;
+          font-size: 12px;
+          letter-spacing: .06em;
+          text-transform: uppercase;
+          font-weight: 500;
+          transition: background .15s;
+          white-space: nowrap;
+        }
+        .mw-story-link:hover {
+          background: #fcd34d;
+          color: #1a1a1a;
+        }
+
         @media (max-width: 700px) {
           .mw-tools-grid { grid-template-columns: 1fr; }
           .mw-why-grid { grid-template-columns: 1fr; }
           .mw-nav-links { display: none; }
           .mw-article-meta { display: none; }
+          .mw-story-card { flex-direction: column; text-align: center; }
         }
       `}</style>
 
@@ -105,6 +147,16 @@ export default function HomePage() {
         <div className="mw-hero-cta">
           <Link href="/#tools" className="mw-btn mw-btn-primary">Explore the tools</Link>
           <Link href="/articles" className="mw-btn mw-btn-secondary">Read the guides</Link>
+        </div>
+      </div>
+
+      {/* STORY BANNER - NEW SECTION */}
+      <div className="mw-story-banner">
+        <div className="mw-story-card">
+          <div className="mw-story-text">
+            📖 <strong>From bankruptcy to $400,000 net worth</strong> — I filed in 2004. Here's how I recovered and built $10k/month passive income.
+          </div>
+          <Link href="/my-debt-story" className="mw-story-link">Read my story →</Link>
         </div>
       </div>
 
@@ -171,7 +223,28 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* FOOTER */}
+      {/* NETWORK FOOTER - NEW SECTION */}
+      <footer style={{ 
+        maxWidth: "1000px", 
+        margin: "0 auto", 
+        padding: "2rem 1.5rem 0.5rem",
+        fontSize: "0.75rem", 
+        color: "#888",
+        textAlign: "center",
+        borderTop: "1px solid #e0dbd3"
+      }}>
+        <p>
+          Part of the <strong>MoneyWise Calculator Network</strong> | 
+          <Link href="/about" style={{ marginLeft: "0.5rem", color: "#888" }}>About</Link> | 
+          <Link href="/my-debt-story" style={{ marginLeft: "0.5rem", color: "#888" }}>My Story</Link> | 
+          <Link href="/privacy" style={{ marginLeft: "0.5rem", color: "#888" }}>Privacy</Link> | 
+          <Link href="/terms" style={{ marginLeft: "0.5rem", color: "#888" }}>Terms</Link> | 
+          <Link href="/contact" style={{ marginLeft: "0.5rem", color: "#888" }}>Contact</Link>
+        </p>
+        <p style={{ marginTop: "0.75rem", marginBottom: 0 }}>© {new Date().getFullYear()} David Graham. All calculations are estimates. Not financial advice.</p>
+      </footer>
+
+      {/* ORIGINAL FOOTER */}
       <footer className="mw-footer">
         <div className="mw-footer-inner">
           <div>

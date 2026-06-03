@@ -1,21 +1,27 @@
-"use client"
-import { Shell } from "../lib/shell"
 export default function Terms() {
   return (
-    <Shell>
-      <style>{`
-        .static-title { font-family: 'DM Serif Display', serif; font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 1rem; }
-        .static-h2 { font-family: 'DM Serif Display', serif; font-size: 1.1rem; margin: 1.5rem 0 .5rem; }
-        .static-body { font-size: 13px; color: #444; line-height: 1.7; margin-bottom: .75rem; }
-      `}</style>
-      <h1 className="static-title">Terms of Service</h1>
-      <p className="static-body">Last updated: May 2025</p>
-      <h2 className="static-h2">Use of calculators</h2>
-      <p className="static-body">All tools on this site are provided for informational and educational purposes only. Results are estimates based on the inputs you provide and should not be construed as financial, tax, legal, or investment advice.</p>
-      <h2 className="static-h2">No warranties</h2>
-      <p className="static-body">We make no warranties regarding the accuracy or completeness of calculator results. Always consult a qualified professional before making major financial decisions.</p>
-      <h2 className="static-h2">Limitation of liability</h2>
-      <p className="static-body">MoneyWiseCalculator.com is not liable for any financial decisions made based on the use of our tools.</p>
-    </Shell>
+    <main style={{ maxWidth: "780px", margin: "0 auto", padding: "2rem 1.5rem", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+      
+      <h1>Terms of Service</h1>
+      <p><strong>Last updated:</strong> June 2026</p>
+      
+      <h2>No Financial Advice</h2>
+      <p>MoneyWise Calculator provides educational tools and estimates only. Nothing on this site constitutes financial advice. All calculations are estimates based on the numbers you provide. Actual results may vary.</p>
+      
+      <h2>No Warranty</h2>
+      <p>The calculators are provided "as is" without any warranty. We are not responsible for financial decisions you make based on calculator outputs.</p>
+      
+      <h2>Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, MoneyWise Calculator shall not be liable for any damages arising from your use of this site.</p>
+      
+      <h2>Use of Calculators</h2>
+      <p>You may embed our calculators on your own website for free, provided you link back to moneywisecalculator.com and do not modify the calculator code.</p>
+      
+      <h2>Changes to Terms</h2>
+      <p>We may update these terms at any time. Continued use of the site constitutes acceptance of updated terms.</p>
+      
+      <h2>Contact</h2>
+      <p>david@moneywisecalculator.com</p>
+    </main>
   )
 }

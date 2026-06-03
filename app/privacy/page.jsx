@@ -1,21 +1,25 @@
-"use client"
-import { Shell } from "../lib/shell"
 export default function Privacy() {
   return (
-    <Shell>
-      <style>{`
-        .static-title { font-family: 'DM Serif Display', serif; font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 1rem; }
-        .static-h2 { font-family: 'DM Serif Display', serif; font-size: 1.1rem; margin: 1.5rem 0 .5rem; }
-        .static-body { font-size: 13px; color: #444; line-height: 1.7; margin-bottom: .75rem; }
-      `}</style>
-      <h1 className="static-title">Privacy Policy</h1>
-      <p className="static-body">Last updated: May 2025</p>
-      <h2 className="static-h2">Information we collect</h2>
-      <p className="static-body">This site uses Google Analytics and Google AdSense, which may collect anonymized usage data including pages visited, time on site, and general location. All calculator inputs are processed locally in your browser and are never transmitted to our servers.</p>
-      <h2 className="static-h2">Cookies</h2>
-      <p className="static-body">We use cookies for analytics and advertising purposes through Google. You can opt out of personalized advertising through Google's ad settings.</p>
-      <h2 className="static-h2">Contact</h2>
-      <p className="static-body">For privacy questions, contact us through our website.</p>
-    </Shell>
+    <main style={{ maxWidth: "780px", margin: "0 auto", padding: "2rem 1.5rem", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+      
+      <h1>Privacy Policy</h1>
+      <p><strong>Last updated:</strong> June 2026</p>
+      
+      <h2>Information Collection</h2>
+      <p>MoneyWise Calculator does not collect personal information. All calculations are performed locally in your browser. No data is sent to our servers.</p>
+      
+      <h2>Cookies</h2>
+      <p>This site uses cookies for basic functionality and to remember your calculator inputs if you refresh the page. No third-party cookies are used except for Google AdSense (once approved).</p>
+      
+      <h2>Third-Party Services</h2>
+      <p>We use Google AdSense to display advertisements. Google may use cookies to serve ads based on your prior visits to this website. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ad Settings</a>.</p>
+      
+      <h2>Contact</h2>
+      <p>Email: david@moneywisecalculator.com</p>
+      <p>Mail: David Graham, 2811 Vinveville Ave, Macon, GA 31204-2831</p>
+      
+      <h2>Your Rights</h2>
+      <p>You may request access to or deletion of any personal data we hold. Contact us at the email above.</p>
+    </main>
   )
 }
