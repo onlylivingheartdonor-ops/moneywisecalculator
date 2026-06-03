@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ALL_TOOLS } from "./lib/links"
+import { RELATED_LINKS as ALL_TOOLS } from "./lib/links"
 
 const ARTICLES = [
   { slug: "how-much-house-can-i-afford", title: "How Much House Can I Afford on My Salary?", date: "May 2025", readTime: "6 min read", excerpt: "The 28% rule, DTI limits, and a realistic look at what lenders will approve — vs what you can actually live with." },
