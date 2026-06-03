@@ -22,3 +22,5 @@ export const RELATED_LINKS = [
   { label: "Rent vs Buy Estimator", href: "https://www.rentvsbuyestimator.com" },
   { label: "CD Penalty Calculator", href: "https://www.cdpenaltycalc.com" }
 ];
+
+export const ALL_TOOLS = RELATED_LINKS;
